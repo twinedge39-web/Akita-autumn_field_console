@@ -5,6 +5,10 @@ Unofficial Chia GUI visual mod: Akita Console - Autumn Field theme for Chia 2.7.
 This package replaces the Electron GUI bundle `app.asar`.
 It keeps the original Chia GUI functions and changes the visual layout/theme.
 
+## Preview
+
+![Akita Autumn Field Console](Screenshots/akita-autumn-field-console.png)
+
 ## Target
 
 - Chia Blockchain GUI: 2.7.1
