@@ -13,7 +13,13 @@ It keeps the original Chia GUI functions and changes the visual layout/theme.
 
 ## Download
 
-Download `app.asar` from the Releases page.
+Download `app.asar` from the Releases page:
+
+https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.1.0-chia-2.7.1
+
+SHA256:
+
+`A8E5D8F68045A151DAE0EC6484CE71FABE5841AF999857C3A236AFC43339187C`
 
 ## Install
 
