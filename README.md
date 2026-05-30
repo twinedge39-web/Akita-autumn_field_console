@@ -9,6 +9,14 @@ It keeps the original Chia GUI functions and changes the visual layout/theme.
 
 ![Akita Autumn Field Console](Screenshots/akita-autumn-field-console.png)
 
+## Status
+
+The new Overview screen is currently a visual front page only.
+Its summary cards are not yet connected to live Chia node, wallet, farm, or plot data.
+
+All original Chia GUI pages remain available from the sidebar.
+The Overview screen is planned for functional updates in a future release.
+
 ## Target
 
 - Chia Blockchain GUI: 2.7.1
