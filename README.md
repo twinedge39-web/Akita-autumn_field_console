@@ -11,11 +11,13 @@ It keeps the original Chia GUI functions and changes the visual layout/theme.
 
 ## Status
 
-The new Overview screen is currently a visual front page only.
-Its summary cards are not yet connected to live Chia node, wallet, farm, or plot data.
+The new Overview screen now includes live summary cards for the standard wallet
+balance, full node sync/peer state, recent farming attempts, and plot/harvester
+summary.
 
 All original Chia GUI pages remain available from the sidebar.
-The Overview screen is planned for functional updates in a future release.
+The sidebar has also been tightened so the full navigation fits better on a
+Full HD monitor.
 
 ## Targets
 
@@ -28,19 +30,19 @@ The Overview screen is planned for functional updates in a future release.
 
 Official Chia 2.7.1 build:
 
-https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.1.0-chia-2.7.1
+https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.0-chia-2.7.1
 
 SHA256:
 
-`A8E5D8F68045A151DAE0EC6484CE71FABE5841AF999857C3A236AFC43339187C`
+`EB22690C90466548ECF3C62BE8C293243E7688525F7CC24B6B6D345BD1E8C0F2`
 
 GigaHorse 2.7.0.giga37 provisional build:
 
-https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.1.0-gigahorse-2.7.0-giga37
+https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.0-gigahorse-2.7.0-giga37
 
 SHA256:
 
-`87AC7FECFE6A733425AD3A6F504C560919764918AF47AC348CB9439B095E353D`
+`9778B3F29BA42536EE4DFC3A14AAD0B66739C146663650AAB2FDD29A84CF0073`
 
 ## Install
 
