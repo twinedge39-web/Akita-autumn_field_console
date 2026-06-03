@@ -11,13 +11,14 @@ It keeps the original Chia GUI functions and changes the visual layout/theme.
 
 ## Status
 
-The new Overview screen now includes live summary cards for the standard wallet
-balance, full node sync/peer state, recent farming attempts, and plot/harvester
-summary.
+Current release: `v0.2.1`.
+
+The v0.2.1 update focuses on NFT view behavior:
+
+- NFT full-screen preview opens consistently, including NFTs whose visible image comes from preview metadata.
+- Full-screen preview fits the image inside the dialog without cropping.
 
 All original Chia GUI pages remain available from the sidebar.
-The sidebar has also been tightened so the full navigation fits better on a
-Full HD monitor.
 
 ## Targets
 
@@ -30,28 +31,32 @@ Full HD monitor.
 
 Official Chia 2.7.1 build:
 
-https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.0-chia-2.7.1
+https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.1-chia-2.7.1
 
 SHA256:
 
-`EB22690C90466548ECF3C62BE8C293243E7688525F7CC24B6B6D345BD1E8C0F2`
+`3820F8FFD24711C5E26C08A454588B3212F10F8AA771BA30E61B4E3AD8EAE9DC`
 
 GigaHorse 2.7.0.giga37 provisional build:
 
-https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.0-gigahorse-2.7.0-giga37
+https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.1-gigahorse-2.7.0-giga37
 
 SHA256:
 
-`9778B3F29BA42536EE4DFC3A14AAD0B66739C146663650AAB2FDD29A84CF0073`
+`4170F60FECCF14CBC569CB16E570F3A31FE437AE1FF1DDC4BE4A819279903277`
 
 ## Install
 
+See [docs/install.md](docs/install.md).
+
+Short version:
+
 1. Close Chia Blockchain.
-2. Backup the original file:
+2. Back up the original file:
 
    `C:\Users\<you>\AppData\Local\Programs\Chia\resources\app.asar`
 
-3. Replace it with the modded `app.asar`.
+3. Replace it with the downloaded modded `app.asar`.
 4. Start Chia Blockchain.
 
 ## GigaHorse Note

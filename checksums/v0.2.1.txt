@@ -1,0 +1,23 @@
+# Akita Autumn Field Console v0.2.1 Checksums
+
+## Chia 2.7.1
+
+File:
+`akita-autumn-field-console-v0.2.1-chia-2.7.1-app.asar`
+
+SHA256:
+`3820F8FFD24711C5E26C08A454588B3212F10F8AA771BA30E61B4E3AD8EAE9DC`
+
+Release:
+https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.1-chia-2.7.1
+
+## GigaHorse 2.7.0.giga37
+
+File:
+`akita-autumn-field-console-v0.2.1-gigahorse-2.7.0-giga37-app.asar`
+
+SHA256:
+`4170F60FECCF14CBC569CB16E570F3A31FE437AE1FF1DDC4BE4A819279903277`
+
+Release:
+https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.1-gigahorse-2.7.0-giga37
