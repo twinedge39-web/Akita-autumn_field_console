@@ -96,6 +96,7 @@ packages/**/playwright-report/index.html
 
 .env
 dist
+.mod-build*
 
 # JetBrains
 .idea/
