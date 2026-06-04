@@ -45,6 +45,15 @@ SHA256:
 
 `4170F60FECCF14CBC569CB16E570F3A31FE437AE1FF1DDC4BE4A819279903277`
 
+## Source Code
+
+The release source is available in this repository on the source branch:
+
+https://github.com/twinedge39-web/Akita-autumn_field_console/tree/akita-nft-preview-dialog
+
+The `main` branch is kept as a lightweight release and documentation branch.
+See [docs/source.md](docs/source.md) for details.
+
 ## Install
 
 See [docs/install.md](docs/install.md).
