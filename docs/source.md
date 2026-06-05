@@ -14,16 +14,17 @@ It does not contain the full Chia GUI source tree.
 The current mod source is published on this branch:
 
 ```txt
-akita-nft-preview-dialog
+akita-mod-source
 ```
 
 Source URL:
 
 ```txt
-https://github.com/twinedge39-web/Akita-autumn_field_console/tree/akita-nft-preview-dialog
+https://github.com/twinedge39-web/Akita-autumn_field_console/tree/akita-mod-source
 ```
 
-The v0.2.1 GitHub releases were created from that branch.
+The v0.2.1 GitHub releases match this source commit. The older
+`akita-nft-preview-dialog` branch is kept for existing links.
 
 ## Why split the branches?
 
@@ -40,3 +41,4 @@ Original Chia source:
 ```txt
 https://github.com/Chia-Network/chia-blockchain
 ```
+

@@ -49,7 +49,7 @@ SHA256:
 
 The release source is available in this repository on the source branch:
 
-https://github.com/twinedge39-web/Akita-autumn_field_console/tree/akita-nft-preview-dialog
+https://github.com/twinedge39-web/Akita-autumn_field_console/tree/akita-mod-source
 
 The `main` branch is kept as a lightweight release and documentation branch.
 See [docs/source.md](docs/source.md) for details.
@@ -87,3 +87,4 @@ It is not affiliated with, maintained by, or endorsed by Chia Network or GigaHor
 Use at your own risk. This mod is intended for local GUI customization.
 
 Based on Chia Network's chia-blockchain GUI, licensed under Apache License 2.0.
+
