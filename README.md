@@ -68,12 +68,26 @@ Short version:
 3. Replace it with the downloaded modded `app.asar`.
 4. Start Chia Blockchain.
 
+This is not a standalone installer. The target installation must already have
+the daemon payload next to the GUI bundle:
+
+```txt
+C:\Users\<you>\AppData\Local\Programs\Chia\resources\app.asar.unpacked\daemon
+```
+
 ## GigaHorse Note
 
 GigaHorse does not ship its own GUI. This provisional build follows the common approach of using a version-aligned Chia GUI bundle with GigaHorse services.
 
-Basic GUI operation is expected when the service version matches `2.7.0.giga37`.
-Advanced features such as DataLayer or other less-used Chia service integrations are not fully verified with GigaHorse.
+For GigaHorse use, install the matching GigaHorse build first, then replace
+`resources\app.asar`. GigaHorse is not fully source-public in the same way as
+this GUI tree, so this mod cannot guarantee complete GigaHorse behavior from
+source inspection alone.
+
+Basic GUI operation is expected when the service version matches the target
+build. Advanced features such as DataLayer or other less-used Chia service
+integrations are not fully verified with GigaHorse. Verify the installed result
+on the target machine and keep a backup of the original `app.asar`.
 
 ## Restore
 

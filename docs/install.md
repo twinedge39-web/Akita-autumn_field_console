@@ -48,6 +48,25 @@ Expected SHA256:
 
 6. Start Chia Blockchain.
 
+## Requirement
+
+This package is an `app.asar` replacement only. It is not a full Chia or
+GigaHorse installer.
+
+Before replacing `app.asar`, confirm the target install already has:
+
+```txt
+C:\Users\<you>\AppData\Local\Programs\Chia\resources\app.asar.unpacked\daemon
+```
+
+The GUI starts the local daemon from that unpacked payload. If the target
+machine only has the downloaded Akita `app.asar`, it is incomplete.
+
+For GigaHorse use, install the matching GigaHorse build first, then replace
+`resources\app.asar`. Because GigaHorse is not fully source-public in this GUI
+tree, this mod cannot guarantee complete GigaHorse behavior from source
+inspection alone. Verify the result on the target machine.
+
 ## Restore
 
 Close Chia Blockchain, restore the backed up `app.asar`, then start Chia Blockchain again.
