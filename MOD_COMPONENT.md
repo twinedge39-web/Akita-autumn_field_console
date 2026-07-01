@@ -29,6 +29,18 @@ mode.
 The pack script builds an `app.asar` replacement that can be installed into the
 local Chia application after review.
 
+This is not a full installer. It assumes the target installation already has
+the daemon payload next to the ASAR, typically:
+
+```txt
+resources\app.asar.unpacked\daemon
+```
+
+For GigaHorse use, install the matching GigaHorse build first, then replace
+`resources\app.asar`. Because GigaHorse is not fully source-public here, the mod
+cannot claim complete GigaHorse behavior from source inspection alone. Verify
+the installed result on the target machine and keep the replacement reversible.
+
 ## Current Mod Surface
 
 The current implementation adds or changes these areas.
@@ -96,6 +108,11 @@ it. Do not delete that backup until the modified GUI has launched successfully.
 
 During full node sync, it is usually better to wait before replacing the GUI, so
 the node can continue syncing without interruption.
+
+Do not distribute the generated `app.asar` as a standalone GigaHorse
+installation. It is a GUI replacement for an already working Chia/GigaHorse
+install, and behavior can differ if the target daemon payload does not match
+the intended build.
 
 ## Important Files
 

@@ -1,4 +1,4 @@
-import { Color, Flex, useMode, Mode, useDarkMode } from '@chia-network/core';
+import { Flex, useMode, Mode, useDarkMode } from '@chia-network/core';
 import { WalletConnections, WalletStatus, WalletReceiveAddressField } from '@chia-network/wallets';
 import { Trans } from '@lingui/macro';
 import { Box, ButtonGroup, Button, Popover, PopoverProps } from '@mui/material';
@@ -18,14 +18,13 @@ const StyledPopover = styled((props: PopoverProps) => <Popover {...props} />)(({
     borderRadius: '8px',
     marginTop: theme.spacing(1),
     minWidth: 180,
-    color: theme.palette.mode === 'light' ? Color.Comet[700] : theme.palette.grey[300],
-    boxShadow: `${Color.Neutral[50]} 0px 0px 0px 0px, ${alpha(
-      Color.Neutral[900],
-      theme.palette.mode === 'dark' ? 0.15 : 0.05,
-    )} 0px 0px 0px 1px, ${alpha(
-      Color.Neutral[900],
-      theme.palette.mode === 'dark' ? 0.01 : 0.1,
-    )} 0px 10px 15px -3px, ${alpha(Color.Neutral[900], theme.palette.mode === 'dark' ? 0.15 : 0.05)} 0px 4px 6px -2px`,
+    color: theme.palette.text.primary,
+    border: `1px solid ${(theme.palette as any).border?.[theme.palette.mode === 'dark' ? 'dark' : 'main'] ?? alpha(theme.palette.text.primary, 0.14)}`,
+    backgroundColor: theme.palette.background.paper,
+    boxShadow:
+      theme.palette.mode === 'dark'
+        ? `0 18px 40px ${alpha('#000', 0.34)}`
+        : `0 18px 40px ${alpha(theme.palette.text.primary, 0.12)}`,
     '& .MuiMenu-list': {
       padding: '4px 0',
     },
@@ -46,6 +45,7 @@ export default function AppStatusHeader() {
   const theme = useTheme();
   const { isDarkMode } = useDarkMode();
   const borderColor = (theme.palette as any).border[isDarkMode ? 'dark' : 'main'];
+  const akita = theme.palette.akita;
   const ButtonGroupStyle = {
     minHeight: '42px',
   };
@@ -62,34 +62,36 @@ export default function AppStatusHeader() {
     '.cancel-icon': {
       g: {
         circle: {
-          stroke: Color.Red[600],
-          fill: Color.Red[600],
+          stroke: akita.disconnected,
+          fill: akita.disconnected,
         },
       },
     },
     '.checkmark-icon': {
       g: {
         circle: {
-          stroke: theme.palette.primary.main,
-          fill: theme.palette.primary.main,
+          stroke: akita.connected,
+          fill: akita.connected,
         },
         path: {
-          stroke: theme.palette.primary.main,
-          fill: theme.palette.primary.main,
+          stroke: akita.connected,
+          fill: akita.connected,
         },
       },
     },
     '.reload-icon': {
       g: {
         circle: {
-          stroke: Color.Orange[400],
-          fill: Color.Orange[400],
+          stroke: akita.attention,
+          fill: akita.attention,
         },
         path: {
-          fill: Color.Orange[400],
+          fill: akita.attention,
         },
       },
     },
+    backgroundColor: theme.palette.background.paper,
+    color: theme.palette.text.primary,
   };
 
   const [mode] = useMode();

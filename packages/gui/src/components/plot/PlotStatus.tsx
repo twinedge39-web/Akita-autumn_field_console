@@ -1,4 +1,4 @@
-import { Flex, Indicator, StateColor, TooltipIcon } from '@chia-network/core';
+import { Flex, Indicator, TooltipIcon } from '@chia-network/core';
 import { Trans } from '@lingui/macro';
 import React from 'react';
 
@@ -7,11 +7,11 @@ import useFarmerStatus from '../../hooks/useFarmerStatus';
 import type Plot from '../../types/Plot';
 
 const Color = {
-  [FarmerStatus.FARMING]: StateColor.SUCCESS,
-  [FarmerStatus.SYNCHING]: StateColor.WARNING,
-  [FarmerStatus.NOT_AVAILABLE]: StateColor.WARNING,
-  [FarmerStatus.NOT_CONNECTED]: StateColor.ERROR,
-  [FarmerStatus.NOT_RUNNING]: StateColor.ERROR,
+  [FarmerStatus.FARMING]: 'akita.farming',
+  [FarmerStatus.SYNCHING]: 'akita.attention',
+  [FarmerStatus.NOT_AVAILABLE]: 'akita.attention',
+  [FarmerStatus.NOT_CONNECTED]: 'akita.disconnected',
+  [FarmerStatus.NOT_RUNNING]: 'akita.disconnected',
 };
 
 const Title = {

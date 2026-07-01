@@ -7,6 +7,28 @@ declare module '@mui/material' {
   }
 }
 
+declare module '@mui/material/styles' {
+  interface Palette {
+    akita: {
+      connected: string;
+      disconnected: string;
+      attention: string;
+      farming: string;
+      cardAccent: string;
+    };
+  }
+
+  interface PaletteOptions {
+    akita?: {
+      connected?: string;
+      disconnected?: string;
+      attention?: string;
+      farming?: string;
+      cardAccent?: string;
+    };
+  }
+}
+
 export default {
   palette: {
     background: {
@@ -50,6 +72,13 @@ export default {
     info: {
       main: Color.Neutral[500],
       dark: Color.Neutral[50],
+    },
+    akita: {
+      connected: '#b98524',
+      disconnected: '#8f641d',
+      attention: '#c48a2a',
+      farming: '#b98524',
+      cardAccent: '#b98524',
     },
   },
   drawer: {

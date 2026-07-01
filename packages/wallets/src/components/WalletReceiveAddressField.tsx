@@ -23,14 +23,15 @@ const WalletReceiveAddressWrapper = styled.div`
   padding: 4px;
   border-radius: 8px;
   border: 1px solid ${(props) => (props.isDarkMode ? props.theme.palette.border.dark : props.theme.palette.border.main)};
+  background: ${({ theme }) => theme.palette.background.paper};
   > .MuiButton-root {
     border: 1px solid
       ${(props) => (props.isDarkMode ? props.theme.palette.border.dark : props.theme.palette.border.main)};
     border-radius: 4px;
-    background: ${(props) => (props.isDarkMode ? Color.Neutral[800] : Color.Neutral[100])};
+    background: ${({ theme }) => theme.palette.background.card ?? theme.palette.background.paper};
   }
   > .MuiButton-root:hover {
-    background: ${({ theme }) => useColorModeValue(theme, 'sidebarBackground')};
+    background: ${({ theme }) => theme.palette.action.hover};
   }
   input {
     padding: 4px 8px;
@@ -42,7 +43,7 @@ const WalletReceiveAddressWrapper = styled.div`
     padding: 3px 5px;
   }
   fieldSet {
-    border: 1px solid ${alpha(Color.Neutral[900], 0.15)};
+    border: 1px solid ${(props) => (props.isDarkMode ? props.theme.palette.border.dark : props.theme.palette.border.main)};
   }
 `;
 

@@ -34,14 +34,14 @@ export default function FormatConnectionStatus(props: Props) {
     variant = 'caption',
     iconSize = 'sm',
   } = props;
-  const color = connected ? 'primary' : 'secondary';
+  const color = connected ? 'akita.connected' : 'akita.disconnected';
 
   return (
     <Flex alignItems="center" gap={1} inline>
-      <Typography variant={variant} color={color}>
+      <Typography variant={variant} sx={{ color }}>
         {connected ? connectedTitle : notConnectedTitle}
       </Typography>
-      <FiberManualRecordIcon color={color} sx={{ fontSize: () => getIconSize(iconSize) }} />
+      <FiberManualRecordIcon sx={{ color, fontSize: () => getIconSize(iconSize) }} />
     </Flex>
   );
 }

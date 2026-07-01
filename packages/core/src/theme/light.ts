@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material/styles';
+import { alpha, createTheme } from '@mui/material/styles';
 
 import Color from '../constants/Color';
 
@@ -28,6 +28,13 @@ export default createTheme({
     info: {
       ...theme.palette.info,
       main: '#5c7882',
+    },
+    akita: {
+      connected: '#b98524',
+      disconnected: '#9a6d22',
+      attention: '#c48a2a',
+      farming: '#b98524',
+      cardAccent: '#b98524',
     },
     action: {
       ...theme.palette.action,
@@ -188,8 +195,8 @@ export default createTheme({
       styleOverrides: {
         root: {
           borderRadius: 8,
-          borderColor: 'rgba(71, 58, 36, 0.14)',
-          backgroundColor: 'rgba(255, 250, 240, 0.86)',
+          borderColor: alpha('#b98524', 0.18),
+          backgroundColor: alpha('#fffaf0', 0.86),
           backgroundImage: 'linear-gradient(180deg, rgba(255, 252, 244, 0.94) 0%, rgba(250, 244, 229, 0.82) 100%)',
           boxShadow: '0 18px 54px rgba(71, 58, 36, 0.1)',
         },
@@ -199,6 +206,44 @@ export default createTheme({
       styleOverrides: {
         root: {
           backgroundImage: 'none',
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          backgroundColor: 'rgba(255, 250, 240, 0.72)',
+          color: 'rgba(36, 48, 36, 0.9)',
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: 'rgba(71, 58, 36, 0.16)',
+          },
+          '&:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: 'rgba(185, 133, 36, 0.42)',
+          },
+          '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#b98524',
+          },
+        },
+      },
+    },
+    MuiTableCell: {
+      styleOverrides: {
+        root: {
+          color: 'rgba(36, 48, 36, 0.9)',
+        },
+        head: {
+          color: 'rgba(36, 48, 36, 0.9)',
+          fontWeight: 700,
+        },
+      },
+    },
+    MuiTablePagination: {
+      styleOverrides: {
+        root: {
+          color: 'rgba(36, 48, 36, 0.78)',
+        },
+        selectIcon: {
+          color: '#5c7882',
         },
       },
     },
@@ -217,6 +262,15 @@ export default createTheme({
         containedPrimary: {
           background: 'linear-gradient(180deg, #d2a33a 0%, #a3711d 100%)',
           boxShadow: '0 10px 22px rgba(163, 113, 29, 0.24)',
+        },
+        outlinedPrimary: {
+          backgroundColor: alpha('#fffaf0', 0.48),
+          borderColor: 'rgba(185, 133, 36, 0.46)',
+          color: '#8f641d',
+          '&:hover': {
+            backgroundColor: 'rgba(185, 133, 36, 0.1)',
+            borderColor: '#b98524',
+          },
         },
       },
     },

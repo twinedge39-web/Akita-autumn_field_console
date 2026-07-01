@@ -3,8 +3,6 @@ import Menu, { MenuProps } from '@mui/material/Menu';
 import { styled, alpha } from '@mui/material/styles';
 import React, { type ReactNode } from 'react';
 
-import Color from '../../constants/Color';
-
 const StyledMenu = styled((props: MenuProps) => (
   <Menu
     elevation={0}
@@ -23,14 +21,13 @@ const StyledMenu = styled((props: MenuProps) => (
     borderRadius: 6,
     marginTop: theme.spacing(1),
     minWidth: 180,
-    color: theme.palette.mode === 'light' ? Color.Comet[700] : theme.palette.grey[300],
-    boxShadow: `${Color.Neutral[50]} 0px 0px 0px 0px, ${alpha(
-      Color.Neutral[900],
-      theme.palette.mode === 'dark' ? 0.15 : 0.05,
-    )} 0px 0px 0px 1px, ${alpha(
-      Color.Neutral[900],
-      theme.palette.mode === 'dark' ? 0.01 : 0.1,
-    )} 0px 10px 15px -3px, ${alpha(Color.Neutral[900], theme.palette.mode === 'dark' ? 0.15 : 0.05)} 0px 4px 6px -2px`,
+    color: theme.palette.text.primary,
+    border: `1px solid ${(theme.palette as any).border?.[theme.palette.mode === 'dark' ? 'dark' : 'main'] ?? alpha(theme.palette.text.primary, 0.14)}`,
+    backgroundColor: theme.palette.background.paper,
+    boxShadow:
+      theme.palette.mode === 'dark'
+        ? `0 18px 40px ${alpha('#000', 0.34)}`
+        : `0 18px 40px ${alpha(theme.palette.text.primary, 0.12)}`,
     '& .MuiMenu-list': {
       padding: '4px 0',
     },
