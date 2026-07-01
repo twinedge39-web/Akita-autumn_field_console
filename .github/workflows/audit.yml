@@ -6,8 +6,6 @@ on:
       - long_lived/**
       - main
       - release/**
-    tags:
-      - "**"
   pull_request:
     branches:
       - "**"
