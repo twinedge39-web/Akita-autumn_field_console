@@ -24,6 +24,17 @@ Expected SHA256:
 4170F60FECCF14CBC569CB16E570F3A31FE437AE1FF1DDC4BE4A819279903277
 ```
 
+## GigaHorse 2.7.1.giga37 Prerelease
+
+Download:
+https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.3-gigahorse-2.7.1-giga37
+
+Expected SHA256:
+
+```txt
+53F2C90378BADE46654B110DA8F55F0667FAA8040248211BDA467C052C5EF29F
+```
+
 ## Windows Replacement Steps
 
 1. Close Chia Blockchain.

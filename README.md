@@ -12,6 +12,7 @@ It keeps the original Chia GUI functions and changes the visual layout/theme.
 ## Status
 
 Current release: `v0.2.1`.
+Current GigaHorse prerelease: `v0.2.3-gigahorse-2.7.1-giga37`.
 
 The v0.2.1 update focuses on NFT view behavior:
 
@@ -44,6 +45,14 @@ https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.1
 SHA256:
 
 `4170F60FECCF14CBC569CB16E570F3A31FE437AE1FF1DDC4BE4A819279903277`
+
+GigaHorse 2.7.1.giga37 prerelease:
+
+https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.3-gigahorse-2.7.1-giga37
+
+SHA256:
+
+`53F2C90378BADE46654B110DA8F55F0667FAA8040248211BDA467C052C5EF29F`
 
 ## Source Code
 
