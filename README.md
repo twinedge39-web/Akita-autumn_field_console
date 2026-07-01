@@ -11,13 +11,14 @@ It keeps the original Chia GUI functions and changes the visual layout/theme.
 
 ## Status
 
-Current release: `v0.2.1`.
+Current release: `v0.2.3-chia-2.7.1`.
 Current GigaHorse prerelease: `v0.2.3-gigahorse-2.7.1-giga37`.
 
-The v0.2.1 update focuses on NFT view behavior:
+The v0.2.3 update refreshes the Akita Autumn Field theme:
 
-- NFT full-screen preview opens consistently, including NFTs whose visible image comes from preview metadata.
-- Full-screen preview fits the image inside the dialog without cropping.
+- Light and dark theme colors are updated across cards, tables, dropdowns, header controls, wallet receive address field, and plot status indicators.
+- Mod-specific theme color slots are used while preserving the normal system palettes.
+- Install requirements are clarified for `app.asar` replacement builds.
 
 All original Chia GUI pages remain available from the sidebar.
 
@@ -32,11 +33,11 @@ All original Chia GUI pages remain available from the sidebar.
 
 Official Chia 2.7.1 build:
 
-https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.1-chia-2.7.1
+https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.3-chia-2.7.1
 
 SHA256:
 
-`3820F8FFD24711C5E26C08A454588B3212F10F8AA771BA30E61B4E3AD8EAE9DC`
+`54E51D5FDDAD07AAEDE14A94FA31E225527867B5A0F300227C8C730F24C6119D`
 
 GigaHorse 2.7.0.giga37 provisional build:
 

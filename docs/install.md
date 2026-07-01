@@ -5,12 +5,12 @@ Akita Autumn Field Console is distributed as an `app.asar` replacement for the C
 ## Chia 2.7.1
 
 Download:
-https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.1-chia-2.7.1
+https://github.com/twinedge39-web/Akita-autumn_field_console/releases/tag/v0.2.3-chia-2.7.1
 
 Expected SHA256:
 
 ```txt
-3820F8FFD24711C5E26C08A454588B3212F10F8AA771BA30E61B4E3AD8EAE9DC
+54E51D5FDDAD07AAEDE14A94FA31E225527867B5A0F300227C8C730F24C6119D
 ```
 
 ## GigaHorse 2.7.0.giga37
