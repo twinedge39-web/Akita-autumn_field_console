@@ -2,20 +2,34 @@
 
 ## Akita Autumn Field Console Mod Notice
 
-This branch is an unofficial GUI-layer mod for Chia/GigaHorse-style local
-installations. It produces an `app.asar` replacement, not a full installer.
+This mod repository is effectively closed.
 
-The replacement expects an existing installation with:
+The Akita GUI mod functionality developed here has been incorporated into the
+official Chia GUI line and is scheduled for release through Chia `2.7.4-rc1`:
+
+https://github.com/Chia-Network/chia-blockchain/releases/tag/2.7.4-rc1
+
+This branch is kept as a historical reference for the earlier unofficial
+GUI-layer `app.asar` replacement work. New users should follow the official
+Chia release instead of installing this mod.
+
+## Historical Mod Notes
+
+This branch previously produced an unofficial GUI-layer mod for
+Chia/GigaHorse-style local installations. It produced an `app.asar`
+replacement, not a full installer.
+
+The replacement expected an existing installation with:
 
 ```txt
 resources/app.asar.unpacked/daemon
 ```
 
-For GigaHorse use, install the matching GigaHorse build first, then replace
-`resources/app.asar`. GigaHorse is not fully source-public in the same way as
-this GUI tree, so this mod cannot guarantee complete GigaHorse behavior from
-source inspection alone. Treat it as a reversible local GUI replacement and
-verify it on the target machine.
+For GigaHorse use, it required installing the matching GigaHorse build first,
+then replacing `resources/app.asar`. GigaHorse is not fully source-public in
+the same way as this GUI tree, so this mod cannot guarantee complete GigaHorse
+behavior from source inspection alone. Treat it as a reversible local GUI
+replacement and verify it on the target machine.
 
 ![Chia logo](https://www.chia.net/wp-content/uploads/2022/09/chia-logo.svg)
 
